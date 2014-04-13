@@ -1,1 +1,60 @@
 /*This is were the css styling goes. */ 
+
+/* Buttons that flip the page of the story */
+#next {
+  display: none;
+position: fixed;
+ margin-top: 500px;
+  margin-left: 850px;
+}
+#next2 {
+  display: none;
+position: fixed;
+ margin-top: 500px;
+  margin-left: 850px;
+}
+
+#next3 {
+  display: none;
+position: fixed;
+ margin-top: 500px;
+  margin-left: 850px;
+}
+
+/* END */
+
+/*These are part of the story - the only reason I made them into ids' is because I wanted them to fade in/out. */
+#firstpart {
+  font-family: Impact;
+  color: brown;
+  margin-left: 250px;
+  margin-top: 500px;
+  position: fixed;
+  display:none;
+}
+#secpart {
+  font-family: Impact;
+  color: brown;
+  margin-left: 250px;
+  margin-top: 500px;
+  position:fixed;
+  display:none;
+}
+
+#thirdpart {
+  font-family: Impact;
+  color: brown;
+   margin-left: 150px;
+  margin-top: 500px;
+  position:fixed;
+  display:none;
+}
+#fourthpart{
+  font-family: Impact;
+  color: brown;
+   margin-left: 200px;
+  margin-top: 500px;
+  position:fixed;
+  display:none;
+}
+/* END */
