@@ -1,7 +1,7 @@
 <!DOCTYPE html>  
 <html> 
     <head> 
-    <title>Pirates on the Sea of Water</title> 
+    <title>Vengance On The Sea</title> 
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -12,6 +12,55 @@
     </head> 
 <body>
     <script type='text/javascript' src="Piratescript.js"></script>
+<!-- These are part of the story's text split into 'parts'. Notice the IDs' -->
+ 
+          <div id="firstpart">
+            <em>As a young pirate who wishes to sail the seven seas with his father..</em></div> 
+          <div id="secpart"> <em>Gets accepted on board in hopes of finding wealth and glory amongst the crew men..</em>
+              
+          </div> 
+        
+          <div id="thirdpart"><em>One day amidst the chaos; a Kraken appears and murders your father's crew while on the enemy ship!</em>
+          </div>
+        
+          <div id="fourthpart"><em>You now only speak of vengeance and seek power to avenge your father's death.<br> You go to land to look for resources and supplies, and find your first crew member.. </em>
+         
+          </div>
+          <!-- END -->
+          
+          <!--These are the buttons that create a slideshow; Next() is the first button, Next2() is the second, etc.-->
+          <!-- Each one is a function that is activated accordingly.. Notice how it's JS (script tags) in the HTML file. -->
+          
+          <script>
+    function Next(){
+      $('#firstpart').fadeOut('slow');
+      $('#next').fadeOut('slow');
 
-<body>
+            $('#secpart').fadeIn('slow');
+            $('#next2').fadeIn('slow');
+            }
+            
+            function Next2(){
+              
+      $('#secpart').fadeOut('slow');
+              $('#next2').fadeOut('slow');
+              $('#thirdpart').fadeIn('slow');
+              $('#next3').fadeIn('slow');
+            }
+            
+            function Next3(){
+              $('#thirdpart').fadeOut('slow');
+              $('#next3').fadeOut('slow');
+              $('#fourthpart').fadeIn('slow');
+              $('#next4').fadeIn('slow');
+            }
+            </script>
+    <!-- END -->
+    
+        <!-- Images of the buttons; They're all the same, so don't worry about them being different. -->
+              <INPUT TYPE="image" id="next" SRC="http://www.newrivercomputing.com/images/next-button.png" onclick="Next()">
+     <INPUT TYPE="image" id="next2" SRC="http://www.newrivercomputing.com/images/next-button.png" onclick="Next2()">
+            <INPUT TYPE="image" id="next3" SRC="http://www.newrivercomputing.com/images/next-button.png" onclick="Next3()">
+    <!-- END -->
+</body>
 </html>
